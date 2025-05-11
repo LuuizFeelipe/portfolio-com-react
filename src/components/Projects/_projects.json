@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfólio pessoal (antigo)",
+      "text": "Portfólio desenvolvido anteriormente utilizando as seguintes tecnologias: HTML5,  SASS (pré-processador CSS), JavaScript, Git e GitHub. O layout também foi desenvolvido por mim, utilizando o Figma.",
+      "image": "./portfolio-antigo.png",
+      "link": "https://luuizfeelipe.github.io/portfolio-new/"
+    },
+    {
+      "id": 2,
+      "title": "Cropped's",
+      "text": "Clone da home do site Cropped’s desenvolvido utilizando as seguintes tecnologias: HTML5,  SASS (pré-processador CSS) e JavaScript.",
+      "image": "./croppeds.png",
+      "link": "https://clone-croppeds.vercel.app/"
+    }
+  ]
+}

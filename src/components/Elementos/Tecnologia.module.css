@@ -1,0 +1,22 @@
+.tecnologia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tecnologia p {
+  color: var(--cinza-claro-2);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.tecnologia svg {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.tecnologia svg:hover {
+  transform: scale(1.08);
+}

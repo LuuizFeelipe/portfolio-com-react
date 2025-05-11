@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+  --preto-principal: #0F0F0F;
+  --preto-secundario: #131313;
+  --branco-principal: #F4F4F4;
+  --ciano: #04969D;
+  --cinza-claro: #878787;
+  --cinza-claro-2: #B9B8B8;
+  --degrade: radial-gradient(circle, #04969D 0%, #013537 100%);
+  --fonte-titulo: "JetBrains Mono", monospace;
+  --fonte-texto: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--branco-principal);
+  background: var(--preto-principal);
+  font-family: var(--fonte-texto);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.conteudo {
+  max-width: 1010px;
+  margin: auto;
+}
+
+.marcador {
+  color: var(--ciano);
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: var(--cinza-claro);
+}
+
+.animeTop {
+  animation: animeTop 0.5s forwards ease-in-out;
+}
+
+@keyframes animeTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } to {
+    opacity: initial;
+    transform: initial;
+  }
+}

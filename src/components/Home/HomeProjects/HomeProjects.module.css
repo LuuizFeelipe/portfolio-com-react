@@ -1,0 +1,47 @@
+.section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: var(--fonte-titulo);
+  letter-spacing: -0.4px;
+}
+
+.cabecalho a {
+  color: var(--branco-principal);
+  font-size: 0.925rem;
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.cabecalho a:hover {
+  opacity: 1;
+}
+
+.containerProjects {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  margin-top: 3rem;
+  align-items: stretch;
+}
+
+@media (max-width: 640px) {
+  .containerProjects {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+

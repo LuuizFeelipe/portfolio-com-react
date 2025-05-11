@@ -1,0 +1,61 @@
+.section {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.skills::after {
+  top: 15px;
+  left: 15px;
+  background: url('../../../assets/fire.svg') no-repeat center;
+}
+
+.skills::before {
+  bottom: 15px;
+  right: 15px;
+  background: url('../../../assets/decorador-right.svg') no-repeat center;
+}
+
+.titleSubtitle {
+  padding-left: 0.825rem;
+}
+
+.titleSubtitle::after {
+  left: 0;
+}
+
+@media (max-width: 750px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

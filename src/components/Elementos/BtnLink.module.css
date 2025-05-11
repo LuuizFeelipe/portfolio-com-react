@@ -1,0 +1,46 @@
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.degradeEfeito {
+  height: 100%;
+  width: 500%;
+  background: var(--degrade);
+  grid-area: 1 / 1;
+  animation: animeBtn 3s infinite alternate ease-in-out; 
+  z-index: -1;
+  animation-play-state: running; 
+}
+
+.conteudo:hover .degradeEfeito {
+  animation-play-state: paused; 
+}
+
+
+@keyframes animeBtn {
+  from {
+    transform: translateX(-75%); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+
+.botao {
+  grid-area: 1 / 1;
+  padding: 0.5rem 0.9rem;
+  margin: 2px;
+  background: var(--preto-principal);
+  color: var(--branco-principal);
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+.section {
+  margin-top: 110px;
+}
+
+.title {
+  margin-bottom: 1.875rem;
+  font-size: 2.5rem;
+  font-family: var(--fonte-titulo);
+  letter-spacing: -0.4px;
+  font-weight: 600;
+} 
+
+.section p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.pageSobreMim {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+}

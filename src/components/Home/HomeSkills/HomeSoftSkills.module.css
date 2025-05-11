@@ -1,0 +1,66 @@
+.section {
+  margin-bottom: 8rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 350px;
+}
+
+.skills::after {
+  top: 15px;
+  right: 15px;
+  background: url('../../../assets/light.svg') no-repeat center;
+}
+
+.skills::before {
+  bottom: 15px;
+  left: 15px;
+  background: url('../../../assets/decorador-left.svg') no-repeat center;
+}
+
+.title,
+.titleSubtitle,
+.textSkill {
+  text-align: right;
+}
+
+.textSkill {
+  float: right;
+}
+
+.titleSubtitle {
+  padding-right: 0.825rem;
+}
+
+.titleSubtitle::after {
+  right: 0;
+}
+
+@media (max-width: 750px) {
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .title,
+  .titleSubtitle,
+  .textSkill {
+    text-align: left;
+  }
+
+  .titleSubtitle {
+    padding-left: 0.825rem;
+  }
+
+  .titleSubtitle::after {
+    left: 0;
+  }
+  
+  .skills {
+    min-width: initial;
+  }
+}

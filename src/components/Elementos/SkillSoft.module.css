@@ -1,0 +1,9 @@
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.skill p {
+  font-weight: 300;
+}

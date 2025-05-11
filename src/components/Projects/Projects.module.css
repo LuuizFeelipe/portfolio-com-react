@@ -1,0 +1,17 @@
+.section {
+  margin: 9rem 0 5rem 0;
+}
+
+.title {
+  font-family: var(--fonte-titulo);
+  letter-spacing: -0.4px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 2rem;
+}
