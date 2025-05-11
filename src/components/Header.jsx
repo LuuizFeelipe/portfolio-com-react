@@ -18,21 +18,29 @@ const Header = () => {
     const navElement = nav.current;
     if (!navElement) return;
 
-    const handleClick = (event) => {
+    // Fecha o menu se clicar em um link
+    const handleClickInside = (event) => {
       const target = event.target;
-
-      // Verifica se o clique foi em um <a> ou dentro de um <a>
       if (target.closest('a')) {
         setMenuMobile(false);
       }
     };
 
-    navElement.addEventListener('click', handleClick);
+    // Fecha o menu se clicar fora do nav
+    const handleClickOutside = (event) => {
+      if (menuMobile && navElement && !navElement.contains(event.target)) {
+        setMenuMobile(false);
+      }
+    };
+
+    navElement.addEventListener('click', handleClickInside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      navElement.removeEventListener('click', handleClick);
+      navElement.removeEventListener('click', handleClickInside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [menuMobile]);
 
   function handleMenuMobile() {
     setMenuMobile(!menuMobile);
